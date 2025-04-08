@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "HMsd5AxOdiZ1CjFNdOh8J3odKEF0zHsstQVfgPAHV0Wt9YCou2EB3RHZ128vfQPB1gdNJGVISLeQAwY4tcOp4g==",
+  "success": true,
+  "projectFilePath": "/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#1/PROYECTO/FASE#1.csproj",
+  "expectedPackageFiles": [
+    "/home/axel-robles/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/gdksharp/3.24.24.95/gdksharp.3.24.24.95.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/axel-robles/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512"
+  ],
+  "logs": []
+}

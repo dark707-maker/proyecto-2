@@ -1,0 +1,108 @@
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.GeneratedMSBuildEditorConfig.editorconfig
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfoInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfo.cs
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.csproj.CoreCompileInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.sourcelink.json
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/FASE#2
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/FASE#2.deps.json
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/FASE#2.runtimeconfig.json
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/AtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/CairoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/GdkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/GioSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/GLibSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/GtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/PangoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.csproj.AssemblyReference.cache
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.csproj.CopyComplete
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/refint/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/FASE#2.genruntimeconfig.cache
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/obj/Debug/net8.0/ref/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/PROYECTOS/PROYECTOS123/EDD-1S2025_202307805 /FASE#2/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.csproj.AssemblyReference.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.GeneratedMSBuildEditorConfig.editorconfig
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfoInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfo.cs
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CoreCompileInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.sourcelink.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/refint/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/FASE#2
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/FASE#2.deps.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/FASE#2.runtimeconfig.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/AtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/CairoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/GdkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/GioSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/GLibSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/GtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/bin/Debug/net8.0/PangoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CopyComplete
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.genruntimeconfig.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/ref/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.csproj.AssemblyReference.cache
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.GeneratedMSBuildEditorConfig.editorconfig
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfoInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfo.cs
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CoreCompileInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/refint/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.deps.json
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.runtimeconfig.json
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/AtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/CairoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GdkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GioSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GLibSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/PangoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CopyComplete
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.genruntimeconfig.cache
+/home/axel-robles/Escritorio/Varias cosas/peru es clave/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/ref/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.deps.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.runtimeconfig.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/AtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/CairoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GdkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GioSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GLibSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/GtkSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/bin/Debug/net8.0/PangoSharp.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.csproj.AssemblyReference.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.GeneratedMSBuildEditorConfig.editorconfig
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfoInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfo.cs
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CoreCompileInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.sourcelink.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CopyComplete
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/refint/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.pdb
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/FASE#2.genruntimeconfig.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/edd2-d7048279aa528e99eafa82fcb6a45acebe8e0862/FASE#2/obj/Debug/net8.0/ref/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.csproj.AssemblyReference.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.GeneratedMSBuildEditorConfig.editorconfig
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfoInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.AssemblyInfo.cs
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CoreCompileInputs.cache
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.sourcelink.json
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/refint/FASE#2.dll
+/home/axel-robles/Escritorio/Varias cosas/simon/edd2/no/FASE#2/obj/Debug/net8.0/FASE#2.pdb
