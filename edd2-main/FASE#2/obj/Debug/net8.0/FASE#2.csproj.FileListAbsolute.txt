@@ -48,3 +48,12 @@
 /home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.csproj.CopyComplete
 /home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/FASE#2.genruntimeconfig.cache
 /home/axel-robles/Escritorio/Varias cosas/simon/edd2/FASE#2/obj/Debug/net8.0/ref/FASE#2.dll
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.csproj.AssemblyReference.cache
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.GeneratedMSBuildEditorConfig.editorconfig
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.AssemblyInfoInputs.cache
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.AssemblyInfo.cs
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.csproj.CoreCompileInputs.cache
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.sourcelink.json
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.dll
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\refint\FASE#2.dll
+D:\2025\PRIMER SEMESTRE\ESTRUCTURA DE DATOS\LABORATORIO\proyecto 2\edd2-main\FASE#2\obj\Debug\net8.0\FASE#2.pdb

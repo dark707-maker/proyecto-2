@@ -1,5 +1,7 @@
 using System;
 using Newtonsoft.Json;
+using System.IO;
+using System.Diagnostics;
 
 public class Vehiculo
 {
@@ -78,77 +80,128 @@ public class ListaDobleVehiculos
     }
 
     public bool ExisteId(int id)
-{
-    NodoVehiculo actual = cabeza;
-
-    while (actual != null)
     {
-        if (actual.Vehiculo.Id == id)
+        NodoVehiculo actual = cabeza;
+
+        while (actual != null)
         {
-            return true; // El ID ya existe
+            if (actual.Vehiculo.Id == id)
+            {
+                return true; // El ID ya existe
+            }
+            actual = actual.Siguiente;
         }
-        actual = actual.Siguiente;
+
+        return false; // El ID no existe
     }
 
-    return false; // El ID no existe
-}
 
-
-public bool EliminarPorId(int id)
-{
-    NodoVehiculo actual = cabeza;
-
-    while (actual != null)
+    public bool EliminarPorId(int id)
     {
-        if (actual.Vehiculo.Id == id)
+        NodoVehiculo actual = cabeza;
+
+        while (actual != null)
         {
-            if (actual == cabeza)
+            if (actual.Vehiculo.Id == id)
             {
-                cabeza = actual.Siguiente;
-                if (cabeza != null)
+                if (actual == cabeza)
                 {
-                    cabeza.Anterior = null;
+                    cabeza = actual.Siguiente;
+                    if (cabeza != null)
+                    {
+                        cabeza.Anterior = null;
+                    }
                 }
-            }
-            else if (actual == cola)
-            {
-                cola = actual.Anterior;
-                if (cola != null)
+                else if (actual == cola)
                 {
-                    cola.Siguiente = null;
+                    cola = actual.Anterior;
+                    if (cola != null)
+                    {
+                        cola.Siguiente = null;
+                    }
                 }
+                else
+                {
+                    actual.Anterior.Siguiente = actual.Siguiente;
+                    actual.Siguiente.Anterior = actual.Anterior;
+                }
+                return true; // Nodo eliminado
             }
-            else
-            {
-                actual.Anterior.Siguiente = actual.Siguiente;
-                actual.Siguiente.Anterior = actual.Anterior;
-            }
-            return true; // Nodo eliminado
+            actual = actual.Siguiente;
         }
-        actual = actual.Siguiente;
+        return false; // Nodo no encontrado
     }
-    return false; // Nodo no encontrado
-}
 
-public NodoVehiculo BuscarNodoPorId(int id)
-{
-    NodoVehiculo actual = cabeza;
-    while (actual != null)
+    public NodoVehiculo BuscarNodoPorId(int id)
     {
-        if (actual.Vehiculo.Id == id)
+        NodoVehiculo actual = cabeza;
+        while (actual != null)
         {
-            return actual; // Nodo encontrado
+            if (actual.Vehiculo.Id == id)
+            {
+                return actual; // Nodo encontrado
+            }
+            actual = actual.Siguiente;
         }
-        actual = actual.Siguiente;
+        return null; // Nodo no encontrado
     }
-    return null; // Nodo no encontrado
-}
 
-public bool ExisteUsuario(int idUsuario)
-{
-    ListaUsuarios listaUsuarios = ListaUsuarios.ObtenerInstancia();
-    return listaUsuarios.UsuarioExiste(idUsuario);
-}
+    public void GenerarGraphviz()
+    {
+        string rutaDot = @"temp\vehiculos.dot";
+        string rutaImagen = @"temp\vehiculos.png";
+
+        using (StreamWriter writer = new StreamWriter(rutaDot))
+        {
+            writer.WriteLine("digraph G {");
+            writer.WriteLine("rankdir=LR;");
+            writer.WriteLine("node [shape=record];");
+
+            NodoVehiculo actual = cabeza;
+            int contador = 0;
+
+            while (actual != null)
+            {
+                writer.WriteLine($"node{contador} [label=\"{{ID: {actual.Vehiculo.Id} | Usuario: {actual.Vehiculo.IdUsuario} | Marca: {actual.Vehiculo.Marca} | Modelo: {actual.Vehiculo.Modelo} | Placa: {actual.Vehiculo.Placa}}}\"];");
+
+                if (actual.Siguiente != null)
+                {
+                    writer.WriteLine($"node{contador} -> node{contador + 1};");
+                    writer.WriteLine($"node{contador + 1} -> node{contador};");
+                }
+
+                actual = actual.Siguiente;
+                contador++;
+            }
+
+            writer.WriteLine("}");
+        }
+
+        // Generar la imagen usando Graphviz
+        try
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "dot";
+            process.StartInfo.Arguments = $"-Tpng {rutaDot} -o {rutaImagen}";
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+            process.WaitForExit();
+
+            Console.WriteLine("Archivo Graphviz generado correctamente en /temp.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al generar la imagen: {ex.Message}");
+        }
+    }
+
+    public bool ExisteUsuario(int idUsuario)
+    {
+        ListaUsuarios listaUsuarios = ListaUsuarios.ObtenerInstancia();
+        return listaUsuarios.UsuarioExiste(idUsuario);
+    }
 
     public void Imprimir()
     {

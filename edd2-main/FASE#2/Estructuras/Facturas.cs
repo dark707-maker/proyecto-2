@@ -125,6 +125,64 @@ public class ArbolB
         InsertarNoLleno(raiz, nuevoElemento);
     }
 
+     public void GenerarGraphviz()
+    {
+        string rutaDot = @"temp\facturas.dot";
+        string rutaImagen = @"temp\facturas.png";
+
+        using (StreamWriter writer = new StreamWriter(rutaDot))
+        {
+            writer.WriteLine("digraph G {");
+            writer.WriteLine("node [shape=record];");
+            GenerarNodosGraphviz(raiz, writer);
+            writer.WriteLine("}");
+        }
+
+        // Generar la imagen usando Graphviz
+        try
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "dot";
+            process.StartInfo.Arguments = $"-Tpng {rutaDot} -o {rutaImagen}";
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+            process.WaitForExit();
+
+            Console.WriteLine("Archivo Graphviz generado correctamente en /temp.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al generar la imagen: {ex.Message}");
+        }
+    }
+
+    private void GenerarNodosGraphviz(NodoArbolB nodo, StreamWriter writer)
+    {
+        if (nodo == null) return;
+
+        // Crear el nodo actual
+        string nodoId = $"node{Guid.NewGuid().ToString("N")}";
+        writer.Write($"{nodoId} [label=\"<f0> |");
+
+        for (int i = 0; i < nodo.Claves.Count; i++)
+        {
+            writer.Write($"<f{i + 1}> ID: {nodo.Claves[i].Id}\\nCliente: {nodo.Claves[i].Id_Cliente}\\nServicio: {nodo.Claves[i].Id_Servicio}\\nTotal: {nodo.Claves[i].Total} |");
+        }
+
+        writer.WriteLine("<f" + nodo.Claves.Count + ">\"];");
+
+        // Crear las conexiones con los hijos
+        for (int i = 0; i < nodo.Hijos.Count; i++)
+        {
+            string hijoId = $"node{Guid.NewGuid().ToString("N")}";
+            writer.WriteLine($"{nodoId}:f{i} -> {hijoId};");
+            GenerarNodosGraphviz(nodo.Hijos[i], writer);
+        }
+    }
+
+
     public void InsertarNoLleno(NodoArbolB nodo, Elemento elemento)
     {
         int i = nodo.Claves.Count - 1;

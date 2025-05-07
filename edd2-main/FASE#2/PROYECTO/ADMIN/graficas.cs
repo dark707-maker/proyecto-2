@@ -7,10 +7,17 @@ using System.Collections.Generic;
 //=============================================================================
 //===============================INTERFAZ GRAFICA===============================
 
-class Graficas : Gtk.Window {
- 
+class Graficas : Gtk.Window
+{
 
-    public Graficas() : base(" GRAFICAS ") {
+    ListaUsuarios listaUsuarios = ListaUsuarios.ObtenerInstancia();
+    ListaDobleVehiculos listaVehiculos = ListaDobleVehiculos.ObtenerInstancia();
+    ArbolAVL arbolRepuestos = ArbolAVL.ObtenerInstancia();
+    ArbolServicios arbolServicios = ArbolServicios.ObtenerInstancia();
+    ArbolB arbolFacturas = ArbolB.ObtenerInstancia();
+
+    public Graficas() : base(" GRAFICAS ")
+    {
 
         SetDefaultSize(600, 500);
         SetPosition(WindowPosition.Center);
@@ -23,8 +30,10 @@ class Graficas : Gtk.Window {
         boton1.SetSizeRequest(100, 60);
         fix.Put(boton1, 90, 100);
 
-        boton1.Clicked += (sender, e) => {
-          
+        boton1.Clicked += (sender, e) =>
+        {
+            listaUsuarios.GenerarGraphviz();
+
         };
 
         //---------
@@ -32,8 +41,9 @@ class Graficas : Gtk.Window {
         boton2.SetSizeRequest(100, 60);
         fix.Put(boton2, 250, 100);
 
-        boton2.Clicked += (sender, e) => {
-            
+        boton2.Clicked += (sender, e) =>
+        {
+            listaVehiculos.GenerarGraphviz();
         };
 
         //---------
@@ -41,8 +51,9 @@ class Graficas : Gtk.Window {
         boton3.SetSizeRequest(100, 60);
         fix.Put(boton3, 390, 100);
 
-        boton3.Clicked += (sender, e) => {
-            
+        boton3.Clicked += (sender, e) =>
+        {
+            listaRepuestos.GenerarGraphviz();
         };
 
         //---------
@@ -50,16 +61,18 @@ class Graficas : Gtk.Window {
         boton4.SetSizeRequest(100, 60);
         fix.Put(boton4, 80, 250);
 
-        boton4.Clicked += (sender, e) => {
-            
+        boton4.Clicked += (sender, e) =>
+        {
+            arbolServicios.GenerarGraphviz();
         };
         //---------
         Button boton5 = new Button(" FACTURACION ");
         boton5.SetSizeRequest(100, 60);
         fix.Put(boton5, 250, 250);
 
-        boton5.Clicked += (sender, e) => {
-            
+        boton5.Clicked += (sender, e) =>
+        {
+            arbolFacturas.GenerarGraphviz();
         };
 
         //----------------volver---------------------
@@ -67,13 +80,14 @@ class Graficas : Gtk.Window {
         Button button = new Button("Volver");
         button.SetSizeRequest(100, 30);
         fix.Put(button, 450, 25);
-        button.Clicked += (sender, e) => {
+        button.Clicked += (sender, e) =>
+        {
 
             Principaladmin manual = new Principaladmin();
             manual.ShowAll();
             this.Hide();
 
-            
+
         };
 
         Add(fix);

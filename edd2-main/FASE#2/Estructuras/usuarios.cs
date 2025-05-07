@@ -1,5 +1,6 @@
 using System;
-
+using System.IO;
+using System.Diagnostics;
 public class Usuario
 {
     public int Id { get; set; }
@@ -122,19 +123,71 @@ public class ListaUsuarios
         return true;
     }
 
-   public Usuario BuscarUsuario(int id)
-{
-    Usuario actual = cabeza;
-    while (actual != null)
+    public void GenerarGraphviz()
     {
-        if (actual.Id == id)
+        string rutaDot = @"temp\usuarios.dot";
+        string rutaImagen = @"temp\usuarios.png";
+
+        using (StreamWriter writer = new StreamWriter(rutaDot))
         {
-            return actual; // Usuario encontrado
+            writer.WriteLine("digraph G {");
+            writer.WriteLine("rankdir=LR;");
+            writer.WriteLine("node [shape=record];");
+
+            Usuario actual = cabeza;
+            int contador = 0;
+
+            while (actual != null)
+            {
+                writer.WriteLine($"node{contador} [label=\"{{ID: {actual.Id} | Nombre: {actual.Nombres} {actual.Apellidos} | Correo: {actual.Correo}}}\"];");
+
+                if (actual.Siguiente != null)
+                {
+                    writer.WriteLine($"node{contador} -> node{contador + 1};");
+                }
+
+                actual = actual.Siguiente;
+                contador++;
+            }
+
+            writer.WriteLine("}");
         }
-        actual = actual.Siguiente;
+
+        // Generar la imagen usando Graphviz
+        try
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "dot";
+            process.StartInfo.Arguments = $"-Tpng {rutaDot} -o {rutaImagen}";
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+            process.WaitForExit();
+
+            Console.WriteLine("Archivo Graphviz generado correctamente en /temp.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al generar la imagen: {ex.Message}");
+        }
     }
-    return null; // Usuario no encontrado
-}
+
+
+
+    public Usuario BuscarUsuario(int id)
+    {
+        Usuario actual = cabeza;
+        while (actual != null)
+        {
+            if (actual.Id == id)
+            {
+                return actual; // Usuario encontrado
+            }
+            actual = actual.Siguiente;
+        }
+        return null; // Usuario no encontrado
+    }
 
     public void Imprimir()
     {

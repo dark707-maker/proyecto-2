@@ -1,8 +1,5 @@
 using System;
 using Gtk;
-
-using System;
-using Gtk;
 using Newtonsoft.Json;
 
 public class ListaRepuesto
@@ -73,9 +70,9 @@ public class ArbolAVL
     }
 
     public NodoAVL ObtenerRaiz()
-{
-    return root;
-}
+    {
+        return root;
+    }
 
     private NodoAVL Recursividad(NodoAVL node, ListaRepuesto item)
     {
@@ -137,6 +134,58 @@ public class ArbolAVL
         return node;
     }
 
+    public void GenerarGraphviz()
+    {
+        string rutaDot = @"temp\repuestos.dot";
+        string rutaImagen = @"temp\repuestos.png";
+
+        using (StreamWriter writer = new StreamWriter(rutaDot))
+        {
+            writer.WriteLine("digraph G {");
+            writer.WriteLine("node [shape=record];");
+            GenerarNodosGraphviz(root, writer);
+            writer.WriteLine("}");
+        }
+
+        // Generar la imagen usando Graphviz
+        try
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "dot";
+            process.StartInfo.Arguments = $"-Tpng {rutaDot} -o {rutaImagen}";
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+            process.WaitForExit();
+
+            Console.WriteLine("Archivo Graphviz generado correctamente en /temp.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al generar la imagen: {ex.Message}");
+        }
+    }
+
+    private void GenerarNodosGraphviz(NodoAVL nodo, StreamWriter writer)
+    {
+        if (nodo == null) return;
+
+        writer.WriteLine($"node{nodo.Objeto.Id} [label=\"{{ID: {nodo.Objeto.Id} | Repuesto: {nodo.Objeto.Repuesto} | Detalles: {nodo.Objeto.Detalles} | Costo: {nodo.Objeto.Costo}}}\"];");
+
+        if (nodo.Izquierda != null)
+        {
+            writer.WriteLine($"node{nodo.Objeto.Id} -> node{nodo.Izquierda.Objeto.Id};");
+            GenerarNodosGraphviz(nodo.Izquierda, writer);
+        }
+
+        if (nodo.Derecha != null)
+        {
+            writer.WriteLine($"node{nodo.Objeto.Id} -> node{nodo.Derecha.Objeto.Id};");
+            GenerarNodosGraphviz(nodo.Derecha, writer);
+        }
+    }
+
 
     private NodoAVL RotacionDerecha(NodoAVL y)
     {
@@ -168,41 +217,41 @@ public class ArbolAVL
 
 
     public bool Actualizar(int id, string nuevoNombre, string nuevosDetalles, double nuevoCosto)
-{
-    NodoAVL nodo = BuscarNodo(root, id);
-    if (nodo != null)
     {
-        nodo.Objeto.Repuesto = nuevoNombre;
-        nodo.Objeto.Detalles = nuevosDetalles;
-        nodo.Objeto.Costo = nuevoCosto;
-        return true; // Actualización exitosa
+        NodoAVL nodo = BuscarNodo(root, id);
+        if (nodo != null)
+        {
+            nodo.Objeto.Repuesto = nuevoNombre;
+            nodo.Objeto.Detalles = nuevosDetalles;
+            nodo.Objeto.Costo = nuevoCosto;
+            return true; // Actualización exitosa
+        }
+        return false; // No se encontró el nodo
     }
-    return false; // No se encontró el nodo
-}
 
     public NodoAVL BuscarPorId(int id)
-        {
-    return BuscarNodo(root, id);
-        }
+    {
+        return BuscarNodo(root, id);
+    }
 
     private NodoAVL BuscarNodo(NodoAVL node, int id)
-{
-    if (node == null || node.Objeto.Id == id)
     {
-        return node;
+        if (node == null || node.Objeto.Id == id)
+        {
+            return node;
+        }
+
+        if (id < node.Objeto.Id)
+        {
+            return BuscarNodo(node.Izquierda, id);
+        }
+        else
+        {
+            return BuscarNodo(node.Derecha, id);
+        }
     }
 
-    if (id < node.Objeto.Id)
-    {
-        return BuscarNodo(node.Izquierda, id);
-    }
-    else
-    {
-        return BuscarNodo(node.Derecha, id);
-    }
-}
-
-      public void Imprimirmetodo()
+    public void Imprimirmetodo()
     {
         Imprimir(root);
     }
@@ -218,7 +267,7 @@ public class ArbolAVL
         Console.WriteLine($"Costo: {node.Objeto.Costo}");
         Imprimir(node.Derecha);
         Console.WriteLine();
-        
+
     }
 }
 
